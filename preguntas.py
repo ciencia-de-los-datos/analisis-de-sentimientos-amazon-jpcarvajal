@@ -78,10 +78,10 @@ def pregunta_03():
     from sklearn.feature_extraction.text import CountVectorizer
 
     # Cree un stemeer que use el algoritmo de Porter.
-    stemmer = PorterStemmer()
+    stemmer = PorterStemmer
 
     # Cree una instancia del analizador de palabras (build_analyzer)
-    analyzer = CountVectorizer.build_analyzer()
+    analyzer = CountVectorizer().build_analyzer()
 
     # Retorne el analizador de palabras
     return lambda x: (stemmer.stem(w) for w in analyzer(x))
