@@ -26,7 +26,6 @@ def test_01():
     assert x_untagged.shape == (13609,)
     assert y_untagged.shape == (13609,)
 
-print(test_01())
 
 def test_02():
     """
@@ -129,6 +128,6 @@ test = {
     "04": test_04,
     "05": test_05,
     "06": test_06,
-}#[sys.argv[1]]
+}[sys.argv[1]]
 
 test()
