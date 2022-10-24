@@ -78,7 +78,7 @@ def pregunta_03():
     from sklearn.feature_extraction.text import CountVectorizer
 
     # Cree un stemeer que use el algoritmo de Porter.
-    stemmer = PorterStemmer
+    stemmer = PorterStemmer()
 
     # Cree una instancia del analizador de palabras (build_analyzer)
     analyzer = CountVectorizer().build_analyzer()
